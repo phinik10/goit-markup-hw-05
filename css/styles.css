@@ -96,9 +96,13 @@ ul {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: var(--pressed-state);
+    border-color: transparent;
     border-radius: 2px;
     margin-top: 24px;
+}
+
+.nav-link.link:hover::after{
+    background-color: var(--pressed-state);
 }
 
 .contact-link:hover,
