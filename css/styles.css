@@ -74,7 +74,7 @@ ul {
 .nav-link {
     display: block;
     padding-top: 24px;
-    
+    padding-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
@@ -88,8 +88,11 @@ ul {
     color: var(--pressed-state);
 
 }
-
+.nav-link.link {
+    position: relative;
+}
 .nav-link.link::after{
+    position: absolute;
     display: block;
     content: "";
     width: 100%;
