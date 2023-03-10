@@ -93,7 +93,7 @@ ul {
 .nav-link.link {
     position: relative;
 }
-.nav-link.link::after{
+.nav-link.current::after{
     position: absolute;
     display: block;
     content: "";
@@ -101,13 +101,15 @@ ul {
     height: 4px;
     bottom: -1px;
     left: 0;
+    background-color: var(--pressed-state);
     border-color: transparent;
     border-radius: 2px;
     margin-top: 24px;
+    opacity: 0;
 }
 
-.nav-link.link:hover::after{
-    background-color: var(--pressed-state);
+.nav-link.link::after{
+    opacity: 1;
 }
 
 .contact-link:hover,
