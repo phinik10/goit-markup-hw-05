@@ -112,7 +112,9 @@ ul {
 .nav-link.link::after{
     opacity: 1;
 }
-
+ .nav-link.current {
+    color: var(--pressed-state);
+ }
 
 .contact-link:hover,
 .contact-link:focus {
